@@ -518,12 +518,12 @@
 
 /*DOWNLOAD PAGE*/
 
-.release-view .music-list .album-table > tbody > tr:not(.table-head),
+.release-view .music-list .album-table > tbody > tr:not(.table-head)
  {
     border-bottom: 10px solid #1b1d22;
 }
 
-.release-view .music-list .album-table > tbody > tr:not(.table-head):last-child,
+.release-view .music-list .album-table > tbody > tr:not(.table-head):last-child
  {
     border-bottom: 0;
 }

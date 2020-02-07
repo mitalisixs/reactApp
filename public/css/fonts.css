@@ -1,0 +1,276 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 7, 2020, 4:30:41 PM
+    Author     : Mitali
+*/
+@charset "UTF-8";
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('fonts/NotoSans.eot');
+    src: url('fonts/NotoSans.eot?#iefix') format('embedded-opentype'),
+        url('fonts/NotoSans.woff2') format('woff2'),
+        url('fonts/NotoSans.woff') format('woff'),
+        url('fonts/NotoSans.ttf') format('truetype'),
+        url('fonts/NotoSans.svg#NotoSans') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('fonts/NotoSans-Bold.eot');
+    src: url('fonts/NotoSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/NotoSans-Bold.woff2') format('woff2'),
+        url('fonts/NotoSans-Bold.woff') format('woff'),
+        url('fonts/NotoSans-Bold.ttf') format('truetype'),
+        url('fonts/NotoSans-Bold.svg#NotoSans-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: icomoon;
+    src: url(fonts/icomoon.eot?uve0uv);
+    src: url(fonts/icomoon.eot?uve0uv#iefix) format("embedded-opentype"), url(fonts/icomoon.ttf?uve0uv) format("truetype"), url(fonts/icomoon.woff?uve0uv) format("woff"), url(fonts/icomoon.svg?uve0uv#icomoon) format("svg");
+    font-weight: 400;
+    font-style: normal
+}
+@font-face {
+    font-family: "zipdj";
+    src: url("fonts/zipdj.eot");
+    src: url("fonts/zipdj.eot?#iefix") format("embedded-opentype"), url("fonts/zipdj.woff") format("woff"), url("fonts/zipdj.ttf") format("truetype"), url("fonts/zipdj.svg#zipdj") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+[data-icon]:before {
+    font-family: "zipdj" !important;
+    content: attr(data-icon);
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="zip-"]:before,
+[class*=" zip-"]:before {
+    font-family: "zipdj" !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.zip-shuffle:before {
+    content: "\62";
+}
+
+
+.zip-pause:before {
+    content: "\65";
+}
+
+.zip-zipdjpacks:before {
+    content: "\79";
+}
+
+.zip-favourite:before {
+    content: "\7a";
+}
+
+.zip-labels:before {
+    content: "\42";
+}
+
+.zip-new-releases:before {
+    content: "\43";
+}
+
+.zip-pauseicon:before {
+    content: "\44";
+}
+
+.zip-playlist:before {
+    content: "\45";
+}
+
+
+.zip-radar:before {
+    content: "\47";
+}
+
+.zip-release-archive:before {
+    content: "\48";
+}
+
+.zip-shuffle-2:before {
+    content: "\49";
+}
+
+.zip-tag:before {
+    content: "\4a";
+}
+
+.zip-top-downloads:before {
+    content: "\4b";
+}
+
+
+.zip-download-manager:before {
+    content: "\4d";
+}
+
+.zip-download-2:before {
+    content: "\4e";
+}
+
+.zip-delete:before {
+    content: "\4f";
+}
+
+.zip-comment:before {
+    content: "\50";
+}
+
+.zip-charts:before {
+    content: "\51";
+}
+
+.zip-angle-down:before {
+    content: "\52";
+    color: #fff;
+}
+
+.genre_title .zip-angle-down:before {
+    color: #507de5;
+}
+
+.zip-angle-left:before {
+    content: "\53";
+}
+
+
+.zip-play:before {
+    content: "\58";
+}
+
+.zip-playback-play:before {
+    content: "\59";
+}
+
+.zip-playback-pause:before {
+    content: "\5a";
+}
+
+.zip-genres-icon:before {
+    content: "\e900";
+}
+
+.icon-play-again-music:before {
+    content: "\56";
+    font-family: "zipdj" !important;
+    position: relative;
+    left: -1px;
+}
+
+
+[class*=" icon-"], [class^=icon-] {
+    font-family: icomoon !important;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.icon-music-player:before {
+    content: "\e91b"
+}
+
+.icon-arrow-download:before {
+    content: "\e920"
+}
+
+.icon-keyboard:before {
+    content: "\e921"
+}
+
+.icon-playlist:before {
+    content: "\e922"
+}
+
+.icon-add:before {
+    content: "\e923"
+}
+
+.icon-favorite:before {
+    content: "\e929"
+}
+
+.icon-flag:before {
+    content: "\e92a"
+}
+
+.icon-info:before {
+    content: "\e92b"
+}
+
+.icon-pagination-left:before {
+    content: "\e92f"
+}
+
+.icon-pagination-right:before {
+    content: "\e930"
+}
+
+.icon-play-music:before {
+    content: "\e931"
+}
+
+.icon-repeat-music:before {
+    content: "\e932"
+}
+
+.icon-tag:before {
+    content: "\e933"
+}
+.icon-mute:before {
+    content: "\e939"
+}
+
+.icon-pause:before {
+    content: "\e93a"
+}
+
+.icon-play:before {
+    content: "\e93b"
+}
+
+.icon-menu:before {
+    content: "\e944"
+}
+
+.icon-music-charts:before {
+    content: "\e945"
+}
+
+.icon-new-releases:before {
+    content: "\e946"
+}
